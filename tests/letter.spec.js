@@ -13,6 +13,7 @@ async function loadPage(page) {
   await page.evaluate(() => {
     const loader = document.getElementById('loader');
     if (loader) { loader.style.display = 'none'; loader.classList.add('fade-out'); }
+    if (typeof setDate === 'function') setDate();
     if (typeof startOpeningSequence === 'function') startOpeningSequence();
   });
   // Give JS builders a moment to run
@@ -36,14 +37,14 @@ test('page title contains love', async ({ page }) => {
   await expect(page).toHaveTitle(/For You|Love|Aashu/i);
 });
 
-test('all 23 sections exist', async ({ page }) => {
+test('all 24 sections exist', async ({ page }) => {
   await loadPage(page);
   const sectionIds = [
     'opening','her-words','reply-section','night-knew','heartbeat',
     'typewriter-section','waterfall-section','rose-section','polaroid-section',
     'whisper-section','open-when','wish-section','envelope-section','flower-section',
     'promise-section','clock-section','bubbles-section','stars-section',
-    'galaxy-section','home-section','counter-section','would-do','final'
+    'galaxy-section','home-section','counter-section','kiss-section','would-do','final'
   ];
   for (const id of sectionIds) {
     await expect(page.locator(`#${id}`), `Section #${id} missing`).toBeAttached();
@@ -123,10 +124,10 @@ test('all canvas elements exist', async ({ page }) => {
 // ====================================================
 // 5. DYNAMICALLY BUILT CONTENT
 // ====================================================
-test('nav dots: 23 dots built', async ({ page }) => {
+test('nav dots: 24 dots built', async ({ page }) => {
   await loadPage(page);
   const count = await page.locator('.nav-dot-wrap').count();
-  expect(count).toBe(23);
+  expect(count).toBe(24);
 });
 
 test('polaroids: 8 cards built', async ({ page }) => {
@@ -143,6 +144,7 @@ test('open-when: 6 envelopes built', async ({ page }) => {
 
 test('bubbles: 30 bubbles built', async ({ page }) => {
   await loadPage(page);
+  await page.waitForFunction(() => document.querySelectorAll('#bubbles-wrap .bubble').length > 0);
   const count = await page.locator('#bubbles-wrap .bubble').count();
   expect(count).toBe(30);
 });
@@ -460,4 +462,66 @@ test('html element has scrollbar-color CSS (not orphaned)', async ({ page }) => 
     return true; // If we reach here with no error, CSS parsed fine
   });
   expect(hasScrollbarColor).toBe(true);
+});
+
+// ====================================================
+// 16. MOBILE VIEWPORT TESTS (390×844)
+// ====================================================
+test.describe('Mobile viewport (390×844)', () => {
+  test.use({ viewport: { width: 390, height: 844 } });
+
+  test('mobile: no JS errors', async ({ page }) => {
+    const errors = await loadPage(page);
+    expect(errors, `JS errors: ${errors.join(', ')}`).toHaveLength(0);
+  });
+
+  test('mobile: no horizontal scroll overflow', async ({ page }) => {
+    await loadPage(page);
+    const overflow = await page.evaluate(() =>
+      document.documentElement.scrollWidth > window.innerWidth
+    );
+    expect(overflow, 'page has horizontal overflow on mobile').toBe(false);
+  });
+
+  test('mobile: all 24 sections exist', async ({ page }) => {
+    await loadPage(page);
+    const sectionIds = [
+      'opening','her-words','reply-section','night-knew','heartbeat',
+      'typewriter-section','waterfall-section','rose-section','polaroid-section',
+      'whisper-section','open-when','wish-section','envelope-section','flower-section',
+      'promise-section','clock-section','bubbles-section','stars-section',
+      'galaxy-section','home-section','counter-section','kiss-section','would-do','final'
+    ];
+    for (const id of sectionIds) {
+      await expect(page.locator(`#${id}`), `mobile: missing #${id}`).toBeAttached();
+    }
+  });
+
+  test('mobile: HUD buttons are large enough to tap', async ({ page }) => {
+    await loadPage(page);
+    for (const id of ['rain-btn', 'music-btn', 'moon-btn']) {
+      const box = await page.locator(`#${id}`).boundingBox();
+      expect(box, `${id} not found`).not.toBeNull();
+      if (box) {
+        expect(box.width, `${id} too narrow for touch`).toBeGreaterThanOrEqual(40);
+        expect(box.height, `${id} too short for touch`).toBeGreaterThanOrEqual(40);
+      }
+    }
+  });
+
+  test('mobile: opening section fits viewport width', async ({ page }) => {
+    await loadPage(page);
+    const overflow = await page.evaluate(() => {
+      const el = document.getElementById('opening');
+      return el ? el.scrollWidth > document.documentElement.clientWidth : false;
+    });
+    expect(overflow, 'opening section overflows on mobile').toBe(false);
+  });
+
+  test('mobile: kiss section figures exist', async ({ page }) => {
+    await loadPage(page);
+    await expect(page.locator('#kiss-section')).toBeAttached();
+    await expect(page.locator('#male-fig')).toBeAttached();
+    await expect(page.locator('#female-fig')).toBeAttached();
+  });
 });

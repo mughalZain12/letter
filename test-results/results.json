@@ -80,12 +80,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1227,
+                  "duration": 2104,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:05.772Z",
+                  "startTime": "2026-05-30T23:56:36.581Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -95,7 +95,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-9d0cbb20a547a5ae3872",
           "file": "letter.spec.js",
-          "line": 26,
+          "line": 27,
           "column": 1
         },
         {
@@ -114,12 +114,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1279,
+                  "duration": 2121,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:07.463Z",
+                  "startTime": "2026-05-30T23:56:40.190Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -129,11 +129,11 @@
           ],
           "id": "1d236a8d1546fc1e39ad-96a137fa396ec18558c7",
           "file": "letter.spec.js",
-          "line": 34,
+          "line": 35,
           "column": 1
         },
         {
-          "title": "all 23 sections exist",
+          "title": "all 24 sections exist",
           "ok": true,
           "tags": [],
           "tests": [
@@ -148,12 +148,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1348,
+                  "duration": 3230,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:08.758Z",
+                  "startTime": "2026-05-30T23:56:42.365Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -161,9 +161,9 @@
               "status": "expected"
             }
           ],
-          "id": "1d236a8d1546fc1e39ad-99db4507efd4913343cb",
+          "id": "1d236a8d1546fc1e39ad-c8defb4c283072a59b19",
           "file": "letter.spec.js",
-          "line": 39,
+          "line": 40,
           "column": 1
         },
         {
@@ -182,12 +182,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1224,
+                  "duration": 2679,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:10.120Z",
+                  "startTime": "2026-05-30T23:56:45.647Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -197,7 +197,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-262180f3b77cc6e7b8d3",
           "file": "letter.spec.js",
-          "line": 56,
+          "line": 57,
           "column": 1
         },
         {
@@ -216,12 +216,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1171,
+                  "duration": 2881,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:11.357Z",
+                  "startTime": "2026-05-30T23:56:48.394Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -231,7 +231,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-a19125f17b2a3d86ada1",
           "file": "letter.spec.js",
-          "line": 63,
+          "line": 64,
           "column": 1
         },
         {
@@ -250,12 +250,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1157,
+                  "duration": 2569,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:12.541Z",
+                  "startTime": "2026-05-30T23:56:51.325Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -265,7 +265,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-fdc8ced59488283d068a",
           "file": "letter.spec.js",
-          "line": 75,
+          "line": 76,
           "column": 1
         },
         {
@@ -284,12 +284,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1236,
+                  "duration": 2250,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:13.713Z",
+                  "startTime": "2026-05-30T23:56:53.949Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -299,7 +299,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-dd12bc1fc42c5d2dcc82",
           "file": "letter.spec.js",
-          "line": 86,
+          "line": 87,
           "column": 1
         },
         {
@@ -318,12 +318,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1305,
+                  "duration": 2539,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:14.964Z",
+                  "startTime": "2026-05-30T23:56:56.251Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -333,7 +333,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-0bf6850bdc7fb58d5521",
           "file": "letter.spec.js",
-          "line": 97,
+          "line": 98,
           "column": 1
         },
         {
@@ -352,12 +352,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1229,
+                  "duration": 2534,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:16.282Z",
+                  "startTime": "2026-05-30T23:56:58.844Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -367,7 +367,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-fa6d226fd75161fe1ceb",
           "file": "letter.spec.js",
-          "line": 103,
+          "line": 104,
           "column": 1
         },
         {
@@ -386,12 +386,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1298,
+                  "duration": 2426,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:17.523Z",
+                  "startTime": "2026-05-30T23:57:01.440Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -401,11 +401,11 @@
           ],
           "id": "1d236a8d1546fc1e39ad-25e41be43f8f3464977a",
           "file": "letter.spec.js",
-          "line": 116,
+          "line": 117,
           "column": 1
         },
         {
-          "title": "nav dots: 23 dots built",
+          "title": "nav dots: 24 dots built",
           "ok": true,
           "tags": [],
           "tests": [
@@ -420,12 +420,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1538,
+                  "duration": 1834,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:18.835Z",
+                  "startTime": "2026-05-30T23:57:03.927Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -433,9 +433,9 @@
               "status": "expected"
             }
           ],
-          "id": "1d236a8d1546fc1e39ad-eeb8b75834c0c6a6a9db",
+          "id": "1d236a8d1546fc1e39ad-ae79c646d667996ff7bd",
           "file": "letter.spec.js",
-          "line": 126,
+          "line": 127,
           "column": 1
         },
         {
@@ -454,12 +454,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1217,
+                  "duration": 2303,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:20.397Z",
+                  "startTime": "2026-05-30T23:57:05.797Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -469,7 +469,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-2dbb86283c29ad389393",
           "file": "letter.spec.js",
-          "line": 132,
+          "line": 133,
           "column": 1
         },
         {
@@ -488,12 +488,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1198,
+                  "duration": 2306,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:21.625Z",
+                  "startTime": "2026-05-30T23:57:08.159Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -503,7 +503,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-22da675071f27a484ff3",
           "file": "letter.spec.js",
-          "line": 138,
+          "line": 139,
           "column": 1
         },
         {
@@ -522,12 +522,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1148,
+                  "duration": 2197,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:22.834Z",
+                  "startTime": "2026-05-30T23:57:10.526Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -537,7 +537,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-249d31a3cb108b2c5a3a",
           "file": "letter.spec.js",
-          "line": 144,
+          "line": 145,
           "column": 1
         },
         {
@@ -556,12 +556,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1263,
+                  "duration": 2409,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:23.993Z",
+                  "startTime": "2026-05-30T23:57:12.760Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -571,7 +571,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-1b2c9ba0bee34d6bc212",
           "file": "letter.spec.js",
-          "line": 150,
+          "line": 152,
           "column": 1
         },
         {
@@ -590,12 +590,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1162,
+                  "duration": 2281,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:25.265Z",
+                  "startTime": "2026-05-30T23:57:15.215Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -605,7 +605,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-57155919aaf3f1933f00",
           "file": "letter.spec.js",
-          "line": 156,
+          "line": 158,
           "column": 1
         },
         {
@@ -624,12 +624,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1174,
+                  "duration": 2086,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:26.436Z",
+                  "startTime": "2026-05-30T23:57:17.569Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -639,7 +639,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-7ec774292a69018dbd26",
           "file": "letter.spec.js",
-          "line": 162,
+          "line": 164,
           "column": 1
         },
         {
@@ -658,12 +658,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1205,
+                  "duration": 2286,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:27.625Z",
+                  "startTime": "2026-05-30T23:57:19.719Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -673,7 +673,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-d82d916925d70aa68062",
           "file": "letter.spec.js",
-          "line": 168,
+          "line": 170,
           "column": 1
         },
         {
@@ -692,12 +692,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1154,
+                  "duration": 2080,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:28.842Z",
+                  "startTime": "2026-05-30T23:57:22.047Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -707,7 +707,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-cfbe20a6561a8896c870",
           "file": "letter.spec.js",
-          "line": 174,
+          "line": 176,
           "column": 1
         },
         {
@@ -726,12 +726,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1181,
+                  "duration": 2374,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:30.012Z",
+                  "startTime": "2026-05-30T23:57:24.174Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -741,7 +741,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-e1876c8522db125053e9",
           "file": "letter.spec.js",
-          "line": 180,
+          "line": 182,
           "column": 1
         },
         {
@@ -760,12 +760,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1191,
+                  "duration": 2004,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:31.207Z",
+                  "startTime": "2026-05-30T23:57:26.584Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -775,7 +775,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-0fefddbc7e6c5daf9e3b",
           "file": "letter.spec.js",
-          "line": 189,
+          "line": 191,
           "column": 1
         },
         {
@@ -794,12 +794,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1210,
+                  "duration": 2285,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:32.409Z",
+                  "startTime": "2026-05-30T23:57:28.636Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -809,7 +809,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-fe3189a3a44f96ce97f0",
           "file": "letter.spec.js",
-          "line": 209,
+          "line": 211,
           "column": 1
         },
         {
@@ -828,12 +828,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1368,
+                  "duration": 2301,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:33.629Z",
+                  "startTime": "2026-05-30T23:57:30.976Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -843,7 +843,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-8234d50a0ed9f05d061f",
           "file": "letter.spec.js",
-          "line": 221,
+          "line": 223,
           "column": 1
         },
         {
@@ -862,12 +862,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1310,
+                  "duration": 2031,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:35.008Z",
+                  "startTime": "2026-05-30T23:57:33.331Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -877,7 +877,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-06385dc4d11487112d2c",
           "file": "letter.spec.js",
-          "line": 237,
+          "line": 239,
           "column": 1
         },
         {
@@ -896,12 +896,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1857,
+                  "duration": 2802,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:36.329Z",
+                  "startTime": "2026-05-30T23:57:35.405Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -911,7 +911,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-d0ad62e8fc17637cfb71",
           "file": "letter.spec.js",
-          "line": 249,
+          "line": 251,
           "column": 1
         },
         {
@@ -930,12 +930,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3068,
+                  "duration": 4436,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:38.200Z",
+                  "startTime": "2026-05-30T23:57:38.245Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -945,7 +945,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-89692351d8f5504dad9b",
           "file": "letter.spec.js",
-          "line": 261,
+          "line": 263,
           "column": 1
         },
         {
@@ -964,12 +964,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1850,
+                  "duration": 2606,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:41.281Z",
+                  "startTime": "2026-05-30T23:57:42.728Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -979,7 +979,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-18c7d7d676cf66aad125",
           "file": "letter.spec.js",
-          "line": 271,
+          "line": 273,
           "column": 1
         },
         {
@@ -998,12 +998,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1931,
+                  "duration": 3541,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:43.147Z",
+                  "startTime": "2026-05-30T23:57:45.380Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1013,7 +1013,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-a2e44ebacf9ca1493d6e",
           "file": "letter.spec.js",
-          "line": 280,
+          "line": 282,
           "column": 1
         },
         {
@@ -1032,12 +1032,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4135,
+                  "duration": 5378,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:45.108Z",
+                  "startTime": "2026-05-30T23:57:48.958Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1047,7 +1047,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-edd5e17714899319fffe",
           "file": "letter.spec.js",
-          "line": 288,
+          "line": 290,
           "column": 1
         },
         {
@@ -1066,12 +1066,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3069,
+                  "duration": 5249,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:49.255Z",
+                  "startTime": "2026-05-30T23:57:54.376Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1081,7 +1081,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-0668d04d9d2c36a186e7",
           "file": "letter.spec.js",
-          "line": 298,
+          "line": 300,
           "column": 1
         },
         {
@@ -1100,12 +1100,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1274,
+                  "duration": 2518,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:52.338Z",
+                  "startTime": "2026-05-30T23:57:59.665Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1115,7 +1115,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-83afa79661c6ac4c3ce3",
           "file": "letter.spec.js",
-          "line": 309,
+          "line": 311,
           "column": 1
         },
         {
@@ -1134,12 +1134,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1845,
+                  "duration": 3081,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:53.630Z",
+                  "startTime": "2026-05-30T23:58:02.221Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1149,7 +1149,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-c8eab5fd36dc697bc804",
           "file": "letter.spec.js",
-          "line": 316,
+          "line": 318,
           "column": 1
         },
         {
@@ -1168,12 +1168,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1565,
+                  "duration": 2481,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:55.489Z",
+                  "startTime": "2026-05-30T23:58:05.337Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1183,7 +1183,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-4d6f7e009a96ae3d0d52",
           "file": "letter.spec.js",
-          "line": 328,
+          "line": 330,
           "column": 1
         },
         {
@@ -1202,12 +1202,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2291,
+                  "duration": 3934,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:57.073Z",
+                  "startTime": "2026-05-30T23:58:07.853Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1217,7 +1217,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-b2039c187591fee8465c",
           "file": "letter.spec.js",
-          "line": 338,
+          "line": 340,
           "column": 1
         },
         {
@@ -1236,12 +1236,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1532,
+                  "duration": 2655,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:20:59.381Z",
+                  "startTime": "2026-05-30T23:58:11.832Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1251,7 +1251,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-79d5bd907084de99ae79",
           "file": "letter.spec.js",
-          "line": 348,
+          "line": 350,
           "column": 1
         },
         {
@@ -1270,12 +1270,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1720,
+                  "duration": 2947,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:00.926Z",
+                  "startTime": "2026-05-30T23:58:14.544Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1285,7 +1285,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-9494c29ea4e8c9b1b8e1",
           "file": "letter.spec.js",
-          "line": 358,
+          "line": 360,
           "column": 1
         },
         {
@@ -1304,12 +1304,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1119,
+                  "duration": 2128,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:02.657Z",
+                  "startTime": "2026-05-30T23:58:17.529Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1319,7 +1319,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-9c04c817c004e732a981",
           "file": "letter.spec.js",
-          "line": 372,
+          "line": 374,
           "column": 1
         },
         {
@@ -1338,12 +1338,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3162,
+                  "duration": 3994,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:03.790Z",
+                  "startTime": "2026-05-30T23:58:19.689Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1353,7 +1353,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-2074080ec2d3c86a5bfd",
           "file": "letter.spec.js",
-          "line": 378,
+          "line": 380,
           "column": 1
         },
         {
@@ -1372,12 +1372,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1315,
+                  "duration": 2201,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:06.962Z",
+                  "startTime": "2026-05-30T23:58:23.710Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1387,7 +1387,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-ab2ba5e81e40a62bd4f6",
           "file": "letter.spec.js",
-          "line": 389,
+          "line": 391,
           "column": 1
         },
         {
@@ -1406,12 +1406,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1230,
+                  "duration": 2299,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:08.289Z",
+                  "startTime": "2026-05-30T23:58:25.947Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1421,7 +1421,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-92acf992b95d8bd373a0",
           "file": "letter.spec.js",
-          "line": 403,
+          "line": 405,
           "column": 1
         },
         {
@@ -1440,12 +1440,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1213,
+                  "duration": 2083,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:09.532Z",
+                  "startTime": "2026-05-30T23:58:28.290Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1455,7 +1455,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-d19f729e116274359d68",
           "file": "letter.spec.js",
-          "line": 412,
+          "line": 414,
           "column": 1
         },
         {
@@ -1474,12 +1474,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1183,
+                  "duration": 2151,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:10.760Z",
+                  "startTime": "2026-05-30T23:58:30.415Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1489,7 +1489,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-0a5df396eecc3c191e7b",
           "file": "letter.spec.js",
-          "line": 421,
+          "line": 423,
           "column": 1
         },
         {
@@ -1508,12 +1508,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1131,
+                  "duration": 2351,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:11.954Z",
+                  "startTime": "2026-05-30T23:58:32.612Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1523,7 +1523,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-50c49541ea764f52d60e",
           "file": "letter.spec.js",
-          "line": 427,
+          "line": 429,
           "column": 1
         },
         {
@@ -1542,12 +1542,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1216,
+                  "duration": 2365,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:13.098Z",
+                  "startTime": "2026-05-30T23:58:35.010Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1557,7 +1557,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-55a12a1e1f5f44c7d109",
           "file": "letter.spec.js",
-          "line": 436,
+          "line": 438,
           "column": 1
         },
         {
@@ -1576,12 +1576,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1198,
+                  "duration": 2205,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:14.325Z",
+                  "startTime": "2026-05-30T23:58:37.416Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1591,7 +1591,7 @@
           ],
           "id": "1d236a8d1546fc1e39ad-10c6f610467784a9abed",
           "file": "letter.spec.js",
-          "line": 445,
+          "line": 447,
           "column": 1
         },
         {
@@ -1610,12 +1610,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1111,
+                  "duration": 2023,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-30T22:21:15.537Z",
+                  "startTime": "2026-05-30T23:58:39.677Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1625,17 +1625,231 @@
           ],
           "id": "1d236a8d1546fc1e39ad-08452c68b9faf2e96cd4",
           "file": "letter.spec.js",
-          "line": 454,
+          "line": 456,
           "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "Mobile viewport (390×844)",
+          "file": "letter.spec.js",
+          "line": 470,
+          "column": 6,
+          "specs": [
+            {
+              "title": "mobile: no JS errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1598,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-30T23:58:41.746Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1d236a8d1546fc1e39ad-ce2d7a56c2739606e3ac",
+              "file": "letter.spec.js",
+              "line": 473,
+              "column": 3
+            },
+            {
+              "title": "mobile: no horizontal scroll overflow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2294,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-30T23:58:43.385Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1d236a8d1546fc1e39ad-1403affb9ba8a46c1250",
+              "file": "letter.spec.js",
+              "line": 478,
+              "column": 3
+            },
+            {
+              "title": "mobile: all 24 sections exist",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2530,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-30T23:58:45.722Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1d236a8d1546fc1e39ad-c039190633e5a3beb707",
+              "file": "letter.spec.js",
+              "line": 486,
+              "column": 3
+            },
+            {
+              "title": "mobile: HUD buttons are large enough to tap",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2480,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-30T23:58:48.288Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1d236a8d1546fc1e39ad-69d726325d8c0fe83fcd",
+              "file": "letter.spec.js",
+              "line": 500,
+              "column": 3
+            },
+            {
+              "title": "mobile: opening section fits viewport width",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1679,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-30T23:58:50.801Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1d236a8d1546fc1e39ad-6159655e35075adf8320",
+              "file": "letter.spec.js",
+              "line": 512,
+              "column": 3
+            },
+            {
+              "title": "mobile: kiss section figures exist",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2078,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-30T23:58:52.517Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1d236a8d1546fc1e39ad-a590fe5d53f169468a8e",
+              "file": "letter.spec.js",
+              "line": 521,
+              "column": 3
+            }
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-30T22:20:05.148Z",
-    "duration": 71616.575,
-    "expected": 46,
+    "startTime": "2026-05-30T23:56:33.891Z",
+    "duration": 140991.902,
+    "expected": 52,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

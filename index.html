@@ -361,40 +361,108 @@ section{position:relative;min-height:100vh;display:flex;flex-direction:column;al
   .reply-col.her{border-right:none;border-bottom:1px solid rgba(200,82,110,.2);padding-bottom:2rem;}
   #typewriter-box{padding:2.5rem 1.5rem;}
   .scroll-parchment{padding:3rem 1.5rem;}
+  #her-words .scroll-container{padding:1.5rem;}
   .final-card{padding:2rem 1.5rem;width:100%;max-width:90%;}
-  .overlay-popup,.star-popup{padding:2.5rem 1.5rem;}
+  .overlay-popup,.star-popup{padding:2.5rem 1.5rem;max-height:85vh;overflow-y:auto;}
+  .ow-card{padding:2rem 1.5rem;}
   #rain-btn,#music-btn{width:48px;height:48px;font-size:1.2rem;}
   #rain-btn{bottom:calc(1.5rem + env(safe-area-inset-bottom,0px));right:1.2rem;}
   #music-btn{bottom:calc(1.5rem + env(safe-area-inset-bottom,0px));left:1.2rem;}
-  #moon-btn{top:calc(1rem + env(safe-area-inset-top,0px));left:1rem;font-size:1.5rem;}
-  #love-ticker{top:calc(1rem + env(safe-area-inset-top,0px));right:1rem;padding:.4rem .8rem;font-size:.65rem;}
-  #nav-dots{right:.2rem;gap:.5rem;}.nav-dot{width:6px;height:6px;}
+  #moon-btn{top:calc(1rem + env(safe-area-inset-top,0px));left:1rem;font-size:1.5rem;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;}
+  #love-ticker{top:calc(1rem + env(safe-area-inset-top,0px));right:1rem;padding:.4rem .8rem;font-size:.65rem;max-width:45%;}
+  #nav-dots{right:.3rem;gap:.5rem;}.nav-dot{width:6px;height:6px;}
   .envelope-wrap{transform:scale(.9);margin-bottom:0;}
-  .flower-wrap{left:calc((100vw - 530px)/2 + 60px);transform:scale(.65);margin:-3rem 0;}
-  .clock-face{transform:scale(.85);margin:1rem auto;}
+  .flower-wrap{transform:scale(.65);transform-origin:center;margin-top:-60px;margin-bottom:-60px;}
+  .clock-face{transform:scale(.82);margin:1.5rem auto;}
   #wish-input-wrap{flex-direction:column;}
   #wish-send{width:100%;padding:1rem;}
+  #waterfall-canvas{height:280px;}
+  #galaxy-canvas{height:350px;}
+  #wish-canvas{height:250px;}
   #star-field{height:350px;}.star-label{font-size:.55rem;width:75px;}
   .envelopes-grid{gap:1.2rem;}.mini-env{width:160px;padding:1rem;}
+  .polaroid{width:165px;}.polaroid-img{height:130px;}
+  button{cursor:pointer !important;}
   body{cursor:default;}
   #cursor,#cursor-ring{display:none;}
 }
 @media(max-width:480px){
-  .flower-wrap{left:calc((100vw - 530px)/2 + 60px);transform:scale(.55);margin:-4.5rem 0;}
-  .clock-face{transform:scale(.75);margin:0 auto;}
+  section{padding:3.5rem 1rem;}
+  .flower-wrap{transform:scale(.52);margin-top:-95px;margin-bottom:-95px;}
+  .clock-face{transform:scale(.74);margin:1rem auto;}
+  .polaroid{width:150px;}.polaroid-img{height:120px;font-size:3rem;}
+  .polaroid-caption{font-size:1.2rem;}
+  #begin-btn{padding:1.1rem 3rem;}
+  #galaxy-canvas{height:300px;}
+  #waterfall-canvas{height:240px;}
+  #wish-canvas{height:220px;}
 }
 @media(max-width:400px){
+  section{padding:3rem 1rem;}
   .chapter-title{font-size:clamp(2.2rem,9vw,3rem);}
-  .envelope-wrap{transform:scale(.8);margin-bottom:-1rem;}
+  .envelope-wrap{transform:scale(.8);margin-bottom:-1.5rem;}
   .letter-card.rise{transform:translateX(-50%) translateY(-150px);}
-  .flower-wrap{left:calc((100vw - 530px)/2 + 60px);transform:scale(.48);margin:-5.5rem 0;}
-  .clock-face{transform:scale(.65);margin:-1rem auto;}
+  .flower-wrap{transform:scale(.46);margin-top:-110px;margin-bottom:-110px;}
+  .clock-face{transform:scale(.66);margin:.5rem auto;margin-bottom:-1.2rem;}
   #love-word{font-size:3rem;}
-  .polaroid{width:160px;}
+  .polaroid{width:140px;}.polaroid-img{height:110px;font-size:2.8rem;}
+  #begin-btn{padding:1rem 2.5rem;}
 }
 @media(max-width:350px){
-  .flower-wrap{left:calc((100vw - 530px)/2 + 60px);transform:scale(.42);margin:-6.5rem 0;}
+  section{padding:2.5rem .8rem;}
+  .flower-wrap{transform:scale(.40);margin-top:-127px;margin-bottom:-127px;}
+  .clock-face{transform:scale(.58);margin:0 auto;margin-bottom:-2rem;}
 }
+
+/* ====== ROMANTIC ANIMATIONS PACK ====== */
+/* 1. CURSOR SPARKLE */
+.sparkle{position:fixed;pointer-events:none;z-index:9996;font-size:.9rem;line-height:1;transform:translate(-50%,-50%);animation:sparklePop .6s ease forwards;}
+@keyframes sparklePop{0%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(0)}100%{opacity:0;transform:translate(-50%,-50%) scale(0) rotate(200deg)}}
+/* 2. FLOATING LANTERNS */
+#lantern-layer{position:fixed;inset:0;pointer-events:none;z-index:2;overflow:hidden;}
+.lantern{position:absolute;bottom:-140px;border-radius:45% 45% 55% 55%;animation:lanternRise linear forwards;}
+@keyframes lanternRise{0%{opacity:0;transform:translateY(0)}5%{opacity:.88}95%{opacity:.7}100%{opacity:0;transform:translateY(-135vh) translateX(var(--ls,0px))}}
+/* 3. FIREFLIES */
+#firefly-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:2;}
+/* 4. MUSIC NOTES */
+#note-layer{position:fixed;inset:0;pointer-events:none;z-index:101;overflow:hidden;}
+.music-note{position:absolute;pointer-events:none;font-size:1.3rem;animation:noteDrift 2.5s ease forwards;}
+@keyframes noteDrift{0%{opacity:1;transform:translate(-50%,-50%) rotate(-10deg)}50%{opacity:.9;transform:translate(calc(-50% + var(--nx,0px)),-50%) translateY(-55px) rotate(12deg)}100%{opacity:0;transform:translate(calc(-50% + var(--nx,0px)),-50%) translateY(-140px) rotate(-5deg)}}
+/* 5. CLICK RIPPLE */
+.click-ripple{position:fixed;pointer-events:none;z-index:9994;width:44px;height:44px;border-radius:50%;border:2px solid var(--rose-light);transform:translate(-50%,-50%) scale(0);animation:rippleExpand .85s ease forwards;}
+@keyframes rippleExpand{0%{opacity:.75;transform:translate(-50%,-50%) scale(0)}100%{opacity:0;transform:translate(-50%,-50%) scale(8)}}
+/* 6. KISS EMOJI ON CLICK */
+.kiss-emoji{position:fixed;pointer-events:none;z-index:9996;font-size:1.7rem;line-height:1;transform:translate(-50%,-50%);animation:kissDrift 2s ease forwards;}
+@keyframes kissDrift{0%{opacity:1;transform:translate(-50%,-50%)}30%{opacity:1;transform:translate(calc(-50% + var(--kx,6px)),-50%) translateY(-38px)}100%{opacity:0;transform:translate(calc(-50% + var(--kx,6px)),-50%) translateY(-135px)}}
+/* 7. SVG HANDWRITING SIGNATURE */
+#sig-svg{display:block;margin:2rem auto 0;overflow:visible;opacity:.85;}
+.sig-path{fill:none;stroke:var(--gold-light);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 3.5s cubic-bezier(.4,0,.2,1) .6s;}
+.sig-path.draw{stroke-dashoffset:0;}
+/* 8. COUPLE KISS SECTION */
+#kiss-section{background:radial-gradient(ellipse at 50% 40%,#2d0a1e 0%,#0f0510 55%,var(--midnight) 100%);}
+.kiss-stage{display:flex;align-items:flex-end;justify-content:center;gap:22px;width:100%;max-width:480px;height:280px;position:relative;margin:2.5rem auto 1.5rem;}
+.sil-figure{display:flex;flex-direction:column;align-items:center;}
+.sil-head,.sil-neck,.sil-body{background:var(--rose-dark);}
+.sil-head{border-radius:50%;box-shadow:0 0 20px rgba(200,82,110,.45);}
+.sil-neck{margin:-2px auto;border-radius:3px;}
+.sil-body{border-radius:32px 32px 16px 16px;box-shadow:0 0 14px rgba(200,82,110,.3);}
+.sil-figure.male{transform-origin:50% 100%;transition:transform 2s cubic-bezier(.4,0,.2,1);}
+.sil-figure.female{transform-origin:50% 100%;transition:transform 2s cubic-bezier(.4,0,.2,1);}
+.kiss-stage.animate .sil-figure.male{transform:translateX(22px) rotate(13deg);}
+.kiss-stage.animate .sil-figure.female{transform:translateX(-22px) rotate(-13deg);}
+.sil-head-wrap{position:relative;display:flex;justify-content:center;align-items:flex-end;}
+.sil-hair{position:absolute;background:var(--rose-dark);border-radius:50% 50% 0 0;box-shadow:0 0 12px rgba(200,82,110,.3);}
+.sil-hair-side{position:absolute;background:var(--rose-dark);border-radius:0 0 18px 18px;}
+.kiss-hearts-wrap{position:absolute;bottom:40%;left:50%;transform:translateX(-50%);width:4px;height:4px;pointer-events:none;z-index:5;}
+.kiss-heart-el{position:absolute;left:0;top:0;font-size:1.2rem;opacity:0;pointer-events:none;animation:heartBurst 1.4s ease forwards;}
+@keyframes heartBurst{0%{opacity:1;transform:translate(-50%,-50%) scale(0)}40%{opacity:1;transform:translate(calc(-50% + var(--hx,0px)),calc(-50% + var(--hy,0px))) scale(1.1)}100%{opacity:0;transform:translate(calc(-50% + var(--hx,0px)),calc(-50% - 70px)) scale(.45)}}
+.kiss-ambient-heart{position:absolute;left:0;top:0;pointer-events:none;opacity:0;font-size:1rem;animation:ambientHeart 3.2s ease forwards;}
+@keyframes ambientHeart{0%{opacity:0;transform:translate(-50%,-50%) translateY(0) scale(.5)}12%{opacity:.85;transform:translate(-50%,-50%) translateY(-14px) scale(1)}100%{opacity:0;transform:translate(-50%,-50%) translateY(-100px) scale(.55)}}
+.kiss-sub{font-family:'Sacramento',cursive;font-size:clamp(1.4rem,4vw,2.2rem);color:var(--rose-light);opacity:0;transition:opacity 1.5s ease;margin-top:.5rem;text-align:center;}
+.kiss-sub.show{opacity:1;}
+@media(max-width:768px){.kiss-stage{gap:14px;height:230px;max-width:360px;}}
+@media(max-width:400px){.kiss-stage{gap:10px;height:200px;max-width:300px;transform:scale(.85);transform-origin:top center;margin-bottom:-20px;}}
+@media(max-width:350px){.kiss-stage{transform:scale(.75);margin-bottom:-35px;}}
 </style>
 </head>
 <body>
@@ -428,6 +496,11 @@ section{position:relative;min-height:100vh;display:flex;flex-direction:column;al
 <canvas id="aurora-canvas"></canvas>
 <canvas id="particles-canvas"></canvas>
 <canvas id="heart-rain-canvas"></canvas>
+<canvas id="firefly-canvas"></canvas>
+
+<!-- OVERLAY LAYERS -->
+<div id="lantern-layer"></div>
+<div id="note-layer"></div>
 
 <!-- HUD -->
 <div id="progress"></div>
@@ -478,6 +551,10 @@ section{position:relative;min-height:100vh;display:flex;flex-direction:column;al
   <p class="line" id="l4" style="color:var(--rose-light);font-size:clamp(1.15rem,3.2vw,1.7rem)">You are the most beautiful thing that has ever happened to me.</p>
   <p class="line" id="l5" style="font-family:'Sacramento',cursive;font-size:clamp(2rem,5.5vw,3.2rem);font-style:normal;color:var(--gold-light)">And this… is my heart.</p>
   <button id="begin-btn" onclick="beginJourney()">Open My Heart &nbsp;✦</button>
+  <!-- Handwriting signature reveal -->
+  <svg id="sig-svg" width="260" height="56" viewBox="0 0 260 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="sig-path" id="sig-path" d="M8,44 C18,22 28,12 38,18 C48,24 44,38 54,32 C64,26 68,14 78,20 C88,26 83,40 93,36 C103,30 108,14 118,20 Q128,26 132,44 Q136,26 146,14 C156,2 166,14 171,26 C176,38 171,46 181,42 C191,36 196,20 206,26 C216,32 220,44 228,46 C234,47 240,44 248,42"/>
+  </svg>
 </section>
 
 <!-- ====== SECTION 1: HER WORDS ====== -->
@@ -485,7 +562,7 @@ section{position:relative;min-height:100vh;display:flex;flex-direction:column;al
   <p class="chapter-num">Chapter One</p>
   <h2 class="chapter-title">Your Words Arrived</h2>
   <p class="chapter-text" style="margin-bottom:2.5rem">I read every word. Every single one. And I felt each of them deeply.</p>
-  <div class="scroll-container glass-panel" style="max-width:750px;width:100%;max-height:65vh;overflow-y:auto;padding:2.5rem;scrollbar-width:thin;scrollbar-color:var(--gold) transparent">
+  <div class="scroll-container glass-panel">
     <p class="her-para">I love you. I love you more than words can ever truly explain, more than sentences can ever fully hold, and more than any message no matter how long could ever completely describe.</p>
     <p class="her-para">I love you in the quiet moments and in the loud ones, in the happy times and in the difficult ones, in the ordinary days and in the unforgettable memories we create together.</p>
     <p class="her-para">I love you when the sun rises and when the stars come out. I love you in ways I understand, and in ways I probably never will, because some feelings are simply too deep to measure.</p>
@@ -568,7 +645,7 @@ section{position:relative;min-height:100vh;display:flex;flex-direction:column;al
 <!-- ====== SECTION 6: LOVE WATERFALL ====== -->
 <section id="waterfall-section">
   <p class="chapter-num">A Thousand Ways</p>
-  <h2 class="chapter-title">1000 Ways I Love You</h2>
+  <h2 class="chapter-title">  1000 Ways I Love You</h2>
   <p class="chapter-text" style="margin-bottom:2rem">Every word here real, felt, yours.</p>
   <canvas id="waterfall-canvas"></canvas>
 </section>
@@ -678,7 +755,7 @@ section{position:relative;min-height:100vh;display:flex;flex-direction:column;al
   <p class="chapter-num">Chapter Ten</p>
   <h2 class="chapter-title">The Smile I Love</h2>
   <p class="chapter-text" style="margin-bottom:1.5rem">Hover or tap each petal every one holds something beautiful about you.</p>
-  <div class="flower-wrap" id="flower-wrap">
+  <div class="flower-wrap" id="flower-wrap" style="left:-90px">
     <div style="position:absolute;width:65px;height:65px;border-radius:50%;background:radial-gradient(circle,var(--gold),var(--gold-dark));top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;display:flex;align-items:center;justify-content:center;font-size:1.8rem;box-shadow:inset 0 0 10px rgba(0,0,0,.3),0 0 20px rgba(212,169,106,.6)">🌸</div>
   </div>
   <p class="chapter-text" style="margin-top:2rem;font-size:1rem;opacity:.8;font-style:italic" id="petal-hint">tap a petal to read —</p>
@@ -718,7 +795,7 @@ section{position:relative;min-height:100vh;display:flex;flex-direction:column;al
   <p class="chapter-num">Chapter Fourteen</p>
   <h2 class="chapter-title">Our Future Sky</h2>
   <p class="chapter-text" style="margin-bottom:2.5rem">Every star is a moment waiting for us. Tap one.</p>
-  <div id="star-field"></div>
+  <div id="star-field" style="position:relative;left:-30px"></div>
 </section>
 
 <!-- ====== SECTION 18: OUR GALAXY ====== -->
@@ -755,6 +832,37 @@ section{position:relative;min-height:100vh;display:flex;flex-direction:column;al
   <p class="chapter-text" style="margin-bottom:3rem">Every single beat belongs to you.</p>
   <div><span id="choice-count">0</span></div>
   <p class="counter-label">Heartbeats since I knew</p>
+</section>
+
+<!-- ====== SECTION 23: KISS ====== -->
+<section id="kiss-section">
+  <p class="chapter-num">Just The Two Of Us</p>
+  <h2 class="chapter-title">Us ♡</h2>
+  <p class="chapter-text">Two hearts. One story. Always finding each other.</p>
+  <div class="kiss-stage" id="kiss-stage">
+    <!-- Male figure (left, leans toward female) -->
+    <div class="sil-figure male" id="male-fig">
+      <div class="sil-head" style="width:68px;height:76px;"></div>
+      <div class="sil-neck" style="width:17px;height:19px;"></div>
+      <div class="sil-body" style="width:86px;height:110px;"></div>
+    </div>
+    <!-- Heart burst anchor -->
+    <div class="kiss-hearts-wrap" id="kiss-hearts-wrap"></div>
+    <!-- Female figure (right, leans toward male) -->
+    <div class="sil-figure female" id="female-fig">
+      <div class="sil-head-wrap">
+        <!-- Hair: top volume -->
+        <div class="sil-hair" style="width:84px;height:50px;top:-14px;left:-11px;"></div>
+        <!-- Hair: side strands -->
+        <div class="sil-hair-side" style="width:15px;height:72px;right:-8px;top:18px;position:absolute;border-radius:0 0 18px 18px;background:var(--rose-dark);"></div>
+        <div class="sil-hair-side" style="width:13px;height:80px;left:-11px;top:18px;position:absolute;border-radius:0 0 18px 18px;background:var(--rose-dark);"></div>
+        <div class="sil-head" style="width:62px;height:70px;position:relative;z-index:1;"></div>
+      </div>
+      <div class="sil-neck" style="width:15px;height:17px;"></div>
+      <div class="sil-body" style="width:78px;height:100px;border-radius:36px 36px 18px 18px;"></div>
+    </div>
+  </div>
+  <p class="kiss-sub" id="kiss-caption">every moment with you is my favourite ♡</p>
 </section>
 
 <!-- ====== SECTION 21: WHAT I'D DO FOR YOU ====== -->
@@ -804,7 +912,7 @@ const sections = [
   'typewriter-section','waterfall-section','rose-section','polaroid-section',
   'whisper-section','open-when','wish-section','envelope-section','flower-section',
   'promise-section','clock-section','bubbles-section','stars-section',
-  'galaxy-section','home-section','counter-section','would-do','final'
+  'galaxy-section','home-section','counter-section','kiss-section','would-do','final'
 ].map(id => document.getElementById(id));
 
 // Build nav dots
@@ -1184,7 +1292,7 @@ function buildWaterfall(){
 
   const drops = Array.from({length:60}, () => ({
     word: words[Math.floor(Math.random()*words.length)],
-    x: Math.random()*100, y: Math.random()*100,
+    x: 8+Math.random()*84, y: Math.random()*100,
     vy: .3+Math.random()*.8, size: 12+Math.random()*10,
     alpha: .3+Math.random()*.6,
     color: Math.random()>.5?`rgba(240,160,180,`:`rgba(240,208,160,`
@@ -1203,9 +1311,10 @@ function buildWaterfall(){
       ctx.globalAlpha = d.alpha;
       ctx.fillStyle = d.color+d.alpha+')';
       ctx.font = `${d.size}px 'Cormorant Garamond', serif`;
+      ctx.textAlign = 'center';
       ctx.fillText(d.word, (d.x/100)*canvas.width, (d.y/100)*canvas.height);
       d.y += d.vy*(100/canvas.height);
-      if(d.y > 105){ d.y = -5; d.x = Math.random()*100; d.word = words[Math.floor(Math.random()*words.length)]; }
+      if(d.y > 105){ d.y = -5; d.x = 8+Math.random()*84; d.word = words[Math.floor(Math.random()*words.length)]; }
     });
     ctx.globalAlpha=1; requestAnimationFrame(drawWaterfall);
   }
@@ -1771,6 +1880,200 @@ function playMelody(){
 // MOON
 // ====================================================
 document.getElementById('moon-btn').addEventListener('click',()=>showPopup('moon-popup'));
+
+// ====================================================
+// ROMANTIC ANIMATIONS PACK
+// ====================================================
+
+// 1. CURSOR SPARKLE TRAIL
+(function(){
+  let last = 0;
+  const chars = ['\u2736','\u2737','\u2665','\u2055','\u00b7'];
+  const colors = ['#f0a0b4','#d4a96a','#f0d0a0','#c8526e','#ffeedd'];
+  document.addEventListener('mousemove', e => {
+    const now = Date.now();
+    if(now - last < 55) return;
+    last = now;
+    const s = document.createElement('span');
+    s.className = 'sparkle';
+    s.textContent = chars[Math.floor(Math.random()*chars.length)];
+    s.style.cssText = `left:${e.clientX}px;top:${e.clientY}px;color:${colors[Math.floor(Math.random()*colors.length)]};`;
+    document.body.appendChild(s);
+    s.addEventListener('animationend', () => s.remove(), {once:true});
+  });
+})();
+
+// 2. FLOATING LANTERNS
+(function(){
+  const layer = document.getElementById('lantern-layer');
+  const cols = [
+    {bg:'rgba(240,160,100,.68)',glow:'#e09050'},
+    {bg:'rgba(240,100,120,.62)',glow:'#c8526e'},
+    {bg:'rgba(212,169,106,.65)',glow:'#d4a96a'},
+    {bg:'rgba(200,140,80,.6)',glow:'#b87040'},
+  ];
+  function spawnLantern(){
+    const c = cols[Math.floor(Math.random()*cols.length)];
+    const w = 26 + Math.random()*18, h = w*1.45;
+    const dur = 13 + Math.random()*9;
+    const sway = (Math.random()-.5)*110;
+    const l = document.createElement('div');
+    l.className = 'lantern';
+    l.style.cssText = `left:${Math.random()*92}%;width:${w}px;height:${h}px;background:${c.bg};box-shadow:0 0 ${14+Math.random()*10}px ${c.glow};animation-duration:${dur}s;animation-delay:${Math.random()*1.5}s;--ls:${sway}px;`;
+    layer.appendChild(l);
+    l.addEventListener('animationend', () => l.remove(), {once:true});
+  }
+  for(let i=0;i<3;i++) setTimeout(spawnLantern, i*2200);
+  setInterval(spawnLantern, 4200);
+})();
+
+// 3. FIREFLIES
+(function(){
+  const cv = document.getElementById('firefly-canvas');
+  if(!cv) return;
+  const ctx = cv.getContext('2d');
+  function resize(){ cv.width=window.innerWidth; cv.height=window.innerHeight; }
+  window.addEventListener('resize', resize); resize();
+  const ffs = Array.from({length:18}, () => ({
+    x: Math.random()*window.innerWidth, y: Math.random()*window.innerHeight,
+    vx: (Math.random()-.5)*.55, vy: (Math.random()-.5)*.55,
+    phase: Math.random()*Math.PI*2, r: 2.2+Math.random()*2
+  }));
+  function draw(){
+    ctx.clearRect(0,0,cv.width,cv.height);
+    ffs.forEach(f => {
+      f.phase += 0.022;
+      if(Math.random()<.008){ f.vx+=(Math.random()-.5)*.28; f.vy+=(Math.random()-.5)*.28; }
+      const spd = Math.sqrt(f.vx*f.vx+f.vy*f.vy);
+      if(spd>0.9){ f.vx/=spd*.9; f.vy/=spd*.9; }
+      f.x+=f.vx; f.y+=f.vy;
+      if(f.x<0) f.x=cv.width; if(f.x>cv.width) f.x=0;
+      if(f.y<0) f.y=cv.height; if(f.y>cv.height) f.y=0;
+      const alpha = Math.max(0, .28+Math.sin(f.phase)*.5);
+      const g = ctx.createRadialGradient(f.x,f.y,0,f.x,f.y,f.r*3.5);
+      g.addColorStop(0,'rgba(255,252,190,.95)'); g.addColorStop(.4,'rgba(200,225,100,.4)'); g.addColorStop(1,'rgba(200,225,100,0)');
+      ctx.globalAlpha=alpha; ctx.fillStyle=g;
+      ctx.beginPath(); ctx.arc(f.x,f.y,f.r*3.5,0,Math.PI*2); ctx.fill();
+    });
+    ctx.globalAlpha=1; requestAnimationFrame(draw);
+  }
+  setTimeout(draw, 600);
+})();
+
+// 4. SVG HANDWRITING REVEAL
+(function(){
+  const path = document.getElementById('sig-path');
+  if(!path) return;
+  requestAnimationFrame(() => {
+    const len = (path.getTotalLength ? path.getTotalLength() : 380);
+    path.style.strokeDasharray = len;
+    path.style.strokeDashoffset = len;
+  });
+  new IntersectionObserver(en => {
+    if(en[0].isIntersecting && !path.dataset.drawn){
+      path.dataset.drawn='1';
+      requestAnimationFrame(() => path.classList.add('draw'));
+    }
+  },{threshold:.5}).observe(document.getElementById('opening'));
+})();
+
+// 5. MUSIC NOTE PARTICLES
+(function(){
+  const noteLayer = document.getElementById('note-layer');
+  const noteChars = ['\u266a','\u266b','\u266c','\u266d','\u2669'];
+  const noteColors = ['#d4a96a','#f0a0b4','#f0d0a0','#c8526e'];
+  let noteInterval = null;
+  function spawnNote(){
+    const btn = document.getElementById('music-btn');
+    if(!btn) return;
+    const rect = btn.getBoundingClientRect();
+    const n = document.createElement('span');
+    n.className = 'music-note';
+    n.textContent = noteChars[Math.floor(Math.random()*noteChars.length)];
+    const dx = (Math.random()-.5)*60;
+    n.style.cssText = `left:${rect.left+rect.width/2}px;top:${rect.top+rect.height/2}px;color:${noteColors[Math.floor(Math.random()*noteColors.length)]};font-size:${1.1+Math.random()*.7}rem;--nx:${dx}px;`;
+    noteLayer.appendChild(n);
+    n.addEventListener('animationend', () => n.remove(), {once:true});
+  }
+  document.getElementById('music-btn').addEventListener('click', () => {
+    setTimeout(() => {
+      if(playing){ if(!noteInterval) noteInterval=setInterval(spawnNote,720); }
+      else { if(noteInterval){ clearInterval(noteInterval); noteInterval=null; } }
+    }, 60);
+  });
+})();
+
+// 6. CLICK RIPPLES + KISS EMOJI
+(function(){
+  const rippleCols = ['rgba(200,82,110,.35)','rgba(212,169,106,.32)','rgba(240,160,180,.3)'];
+  document.addEventListener('click', e => {
+    const r = document.createElement('div');
+    r.className = 'click-ripple';
+    r.style.cssText = `left:${e.clientX}px;top:${e.clientY}px;border-color:${rippleCols[Math.floor(Math.random()*rippleCols.length)]};`;
+    document.body.appendChild(r);
+    r.addEventListener('animationend', () => r.remove(), {once:true});
+    if(Math.random()<.35){
+      const k = document.createElement('span');
+      k.className = 'kiss-emoji';
+      k.textContent = '\ud83d\udc8b';
+      k.style.cssText = `left:${e.clientX}px;top:${e.clientY}px;--kx:${(Math.random()-.5)*28}px;`;
+      document.body.appendChild(k);
+      k.addEventListener('animationend', () => k.remove(), {once:true});
+    }
+  });
+})();
+
+// 7. COUPLE KISS SECTION ANIMATION
+(function(){
+  const stage = document.getElementById('kiss-stage');
+  if(!stage) return;
+  const heartsWrap = document.getElementById('kiss-hearts-wrap');
+  const caption = document.getElementById('kiss-caption');
+  let kissed = false, ambientIv = null;
+  const hChars = ['\u2764','\ud83d\udc95','\ud83c\udf39','\u2661','\ud83d\udc97','\ud83d\udc93'];
+  function burstHearts(){
+    for(let i=0;i<10;i++){
+      const h = document.createElement('span');
+      h.className = 'kiss-heart-el';
+      const angle = (Math.random()*2.4-1.2)*Math.PI;
+      const dist = 28+Math.random()*65;
+      const hx = Math.cos(angle)*dist, hy = Math.sin(angle)*dist-20;
+      h.textContent = hChars[Math.floor(Math.random()*hChars.length)];
+      h.style.setProperty('--hx', hx+'px');
+      h.style.setProperty('--hy', hy+'px');
+      h.style.animationDelay = (Math.random()*.5)+'s';
+      heartsWrap.appendChild(h);
+      setTimeout(()=>h.remove(), 2200);
+    }
+  }
+  function spawnAmbient(){
+    const h = document.createElement('span');
+    h.className = 'kiss-ambient-heart';
+    h.textContent = Math.random()>.5?'\u2764':'\ud83d\udc95';
+    h.style.left = ((Math.random()-.5)*70)+'px';
+    h.style.top = '0px';
+    heartsWrap.appendChild(h);
+    setTimeout(()=>h.remove(), 3500);
+  }
+  new IntersectionObserver(en => {
+    if(en[0].isIntersecting){
+      if(!kissed){
+        kissed = true;
+        setTimeout(()=>{
+          stage.classList.add('animate');
+          setTimeout(()=>{
+            burstHearts();
+            if(caption) caption.classList.add('show');
+            ambientIv = setInterval(spawnAmbient, 1800);
+          }, 2200);
+        }, 400);
+      }
+    } else {
+      if(ambientIv){ clearInterval(ambientIv); ambientIv=null; }
+    }
+  },{threshold:.4}).observe(stage.closest('section'));
+})();
+
 </script>
 </body>
 </html>
